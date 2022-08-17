@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+h2{
+    font-size: 6rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+    cursor: pointer;
+    color: #222;
+    /* -webkit-box-reflect: right 0.5px ; */
+}
+h2 span{
+   transition:ease-in 0.5s;
+}
+h2:hover span:nth-child(1){
+    margin-right: 10px;
+}
+h2:hover span:nth-child(1):after{
+    content:"'";
+}
+h2:hover span:nth-child(2){
+    margin-left: 25px;
+}
+h2:hover span{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+}
